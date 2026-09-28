@@ -784,7 +784,7 @@ function confetti(){
 /* ================= boot ================= */
 async function boot(){
   try{
-    const res=await fetch('/data/vocabulary.json',{cache:'no-cache'});
+    const res=await fetch('/vocabulary.json',{cache:'no-cache'});
     const RAW=await res.json();
     CATS = RAW.cats.map(([id,name,emoji,group])=>({id,name,emoji,group}));
     CAT = Object.fromEntries(CATS.map(c=>[c.id,c]));
