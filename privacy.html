@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy notice — Petites Fiches</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+<main class="wrap" style="max-width:720px">
+<p><a class="back" href="/">← Back to the app</a></p>
+<h1 style="font-family:var(--f-word);font-weight:400">Privacy notice</h1>
+<p><em>Last updated: <span id="upd">September 2026</span>. This is a starting template — review it (ideally with someone who knows the privacy rules where you and your users live) before a wide public launch.</em></p>
+
+<h2>What we collect</h2>
+<p>If you study as a guest, your progress stays in your own browser and nothing is sent to us.</p>
+<p>If you create an account, we store your email address, the name and avatar you choose, and your study progress (which words you've studied, your points, streak and live-game results).</p>
+
+<h2>Who can see it</h2>
+<p>Other signed-in users can see your chosen name, avatar, points, streak and number of words learned on the leaderboard and in live games. Your email address and detailed progress are private.</p>
+
+<h2>Where it's stored</h2>
+<p>Accounts and progress are stored with our database provider, Supabase. The site itself is served by our hosting provider. We don't sell your data and we don't show ads based on it.</p>
+
+<h2>Your choices</h2>
+<p>You can change your name and avatar, reset your progress, or delete your account at any time from your Profile page. Deleting your account removes your profile and progress.</p>
+
+<h2>Contact</h2>
+<p>Questions? Email <a id="mail" href="mailto:hello@example.com">hello@example.com</a>.</p>
+</main>
+<script src="/assets/config.js"></script>
+<script>
+  (function(){ var c=window.APP_CONFIG||{}; if(c.contactEmail){ var m=document.getElementById('mail'); m.href='mailto:'+c.contactEmail; m.textContent=c.contactEmail; }
+  if(c.appName){ document.title='Privacy notice — '+c.appName; } })();
+</script>
+</body>
+</html>
